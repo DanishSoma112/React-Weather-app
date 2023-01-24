@@ -3,14 +3,6 @@ import WeatherInfoComponent from '../subcomponent/weatherInfoComponent';
 import Images from '../imagesDir/images.json'
 
 
-const mapImage = {
-  'Clouds': "/icons/04n.png",
-  'Humidity': "/icons/04n.png",
-  'Wind': "/icons/50d.png",
-  'Pressure': "/icons/13n.png",
-  "Clear":"/icons/01d.png"
-}
-
 
 const WeatherComponent = ({props}) => {
   const isDay = props?.weather[0].icon?.includes('d');
