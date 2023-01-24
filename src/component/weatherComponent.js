@@ -12,7 +12,6 @@ const mapImage = {
 }
 
 
-
 const WeatherComponent = ({props}) => {
   const isDay = props?.weather[0].icon?.includes('d');
   const getTime = (timeStamp) => {

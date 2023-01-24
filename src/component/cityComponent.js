@@ -44,7 +44,7 @@ const CityComponent = ({setWeatherData}) => {
       <div>
         <form onSubmit={fetchWeather}>
             <input type="text" placeholder="City" value={city} onChange={(e) => setCity(e.target.value)} />
-            <button type="submit">Submit</button>
+            <button type="submit" disabled={!Boolean(city)}>Submit</button>
         </form>
       </div>
       {error && <p>Please enter a valid city name</p>}
