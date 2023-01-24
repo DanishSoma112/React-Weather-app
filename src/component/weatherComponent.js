@@ -1,6 +1,6 @@
 import React from 'react';
 import WeatherInfoComponent from '../subcomponent/weatherInfoComponent';
-
+import Images from '../imagesDir/images.json'
 
 
 const mapImage = {
@@ -21,7 +21,7 @@ const WeatherComponent = ({props}) => {
     <>
       <div className="header">
         <p className="heading"><span>{parseInt(props.main.temp) - 273 } &deg;C</span><span> | {props.weather[0].main}</span></p>
-        <img src={mapImage[props.weather[0].main]} alt="test"/>
+        <img src={Images[props.weather[0].main]} alt="test"/>
       </div>
       <p className="city">{props.name}</p>
       <p className="weather-info">Weather Info</p>

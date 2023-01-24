@@ -5,7 +5,8 @@ import './App.css';
 
 function App() {
   const [weatherData, setWeatherData] = useState()
-  console.log("danish",weatherData);
+
+  
   return ( 
     <div className="container">
         <p className="heading">React Weather App</p>
